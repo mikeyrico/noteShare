@@ -1,0 +1,22 @@
+{
+  "name": "noteshare",
+  "homepage": "https://github.com/mrmrico/noteShare",
+  "authors": [
+    "Michael Rico <rico.michael@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^0.14.8"
+  }
+}
