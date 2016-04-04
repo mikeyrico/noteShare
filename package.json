@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/mrmrico/noteShare/issues"
   },
-  "homepage": "https://github.com/mrmrico/noteShare#readme"
+  "homepage": "https://github.com/mrmrico/noteShare#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "express": "^4.13.4",
+    "express-partials": "^0.3.0",
+    "mongoose": "^4.4.11",
+    "session": "^0.1.0"
+  }
 }
