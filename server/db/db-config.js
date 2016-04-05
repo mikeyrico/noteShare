@@ -4,13 +4,13 @@ mongoose.connect('mongodb://localhost/notesharedb');
 
 var db = mongoose.connection;
 
-// db.on('error', function() {
-//   console.error('Error connecting to database');
-// });
+db.on('error', function() {
+  console.error('Error connecting to database');
+});
 
-// db.once('open', function() {
-//   console.log('Database connected!');
-// });
+db.once('open', function() {
+  console.log('Database connected!');
+});
 
 module.exports = db;
 
