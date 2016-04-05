@@ -1,4 +1,4 @@
-var db = require('../db/db-config');
+// var db = require('../db/db-config');
 
-var Note = require('../db/models/note');
+// var Note = require('../db/models/note');
 
