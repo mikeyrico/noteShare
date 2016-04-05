@@ -2,7 +2,8 @@
 
 var noteShareApp = angular.module('noteShareApp', [
   'ngRoute',
-  'noteShareControllers'
+  'noteShareControllers',
+  'noteServices'
   ]);
 
 noteShareApp.config(['$routeProvider',
@@ -10,7 +11,7 @@ noteShareApp.config(['$routeProvider',
     $routeProvider.
       when('/notes', {
         templateUrl: 'partials/notes.html',
-        controller: 'NoteDetailCtrl'
+        controller: 'NoteListCtrl'
       }).
       when('/addNote', {
         templateUrl: 'partials/addNote.html',
