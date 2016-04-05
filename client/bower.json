@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "react": "^0.14.8"
+    "angular": "^1.5.3"
   }
 }
