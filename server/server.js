@@ -1,6 +1,8 @@
 var express = require('express');
 var handler = require('./scripts/request-handler'); // use this to route
 var bodyParser = require('body-parser');
+var noteRouter = require('./db/routers/note-router');
+var morgan = require('morgan');
 
 var port = 6767;
 
@@ -10,6 +12,8 @@ var db = require('./db/db-config');
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(morgan('dev'));
+app.use(express.static(__dirname + '/../client'));
 
 app.get('/', function(req, res) {
   res.json({message: '<><> Success connecting server'});

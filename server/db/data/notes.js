@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "question": "What are 4 instantiation patterns?",
     "answer": "functional, functional shared, prototypal, psuedoclassical"
@@ -23,4 +23,4 @@
     "question": "What is data persistence?",
     "answer": "data persistence refers to the capability of retaining state beyond a program’s current life cycle, such as termination due to loss of power or computer shut down"
   },
-]
+];

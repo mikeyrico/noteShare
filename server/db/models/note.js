@@ -1,15 +1,16 @@
 var mongoose = require('mongoose');
 
-var noteSchema = new mongoose.Schema({
+var noteSchema = mongoose.Schema({
   question: {
     type: String,
-    required: true,
     unique: true,
+    // required: true,
   },
-  answer: String,
+  answer: String
 });
 
-module.exports = mongoose.model('notes', noteSchema);
+var Note = mongoose.model('Note', noteSchema);
+module.exports = Note;
 
 // should require db (located at ../db-config)
 
