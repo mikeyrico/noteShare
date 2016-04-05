@@ -1,13 +1,3 @@
-// require express
-// require body parser
-
-// require a request handler, potentially located in scripts/request-handler.js
-
-// if you are going to use user authentication, then need to require express sessions
-
-// the body should route to appropriate request handler
-// based on path
-
 var express = require('express');
 var handler = require('./scripts/request-handler'); // use this to route
 var bodyParser = require('body-parser');
@@ -34,3 +24,12 @@ app.listen(port, function(err) {
 
 module.exports = app;
 
+// require express
+// require body parser
+
+// require a request handler, potentially located in scripts/request-handler.js
+
+// if you are going to use user authentication, then need to require express sessions
+
+// the body should route to appropriate request handler
+// based on path
