@@ -1,14 +1,14 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/noteSharedb');
+mongoose.connect('mongodb://localhost/notesharedb');
 
 var db = mongoose.connection;
 
-mongoos.on('error', function() {
+db.on('error', function() {
   console.error('Error connecting to database');
 });
 
-mongoose.once('open', function() {
+db.once('open', function() {
   console.log('Database connected!');
 });
 

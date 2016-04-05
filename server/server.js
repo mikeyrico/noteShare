@@ -11,13 +11,13 @@
 var express = require('express');
 var handler = require('./scripts/request-handler'); // use this to route
 var bodyParser = require('body-parser');
-var db = require('db/db-config');
 
 var port = 6767;
 
 var app = express();
+var db = require('./db/db-config');
 
-app.use(bodyPaser.json());
+app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -25,10 +25,11 @@ app.get('/', function(req, res) {
   res.json({message: '<><> Success connecting server'});
 });
 
-applisten(port, function(err) {
+app.listen(port, function(err) {
   if (err) {
     console.log(err);
   }
+  console.log('Im listening');
 });
 
 module.exports = app;
