@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="noteShareApp" >
+<html>
 <head>
   <title>NoteShare</title>
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="NoteCtrl">
+<body ng-app="noteShareApp">
   <h1>Note Share</h1>
-  <form>
-    <textarea name="question" ng-model="question" placeholder="The question..."></textarea><br/>
-    <textarea name="answer" ng-model="answer" placeholder="And the answer..."></textarea><br/>
-    <input type="submit" name="save" value="Save Card" />
-  </form>
-  <p>{{question}}</p>
-  <p>{{answer}}</p>
+  <div ng-view></div>
 </body>
 </html>
