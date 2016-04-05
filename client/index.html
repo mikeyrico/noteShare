@@ -5,8 +5,12 @@
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<bod ng-controller="NoteCtrl">
+<body ng-controller="NoteCtrl">
   <p>{{question}}</p>
   <p>{{answer}}</p>
+  <form>
+    <textarea name="question" ng-model="question" placeholder="Enter the question..."></textarea><br/>
+    <textarea name="answer" ng-model="answer" placeholder="And our answer goes here..."></textarea><br/>
+    <input type="submit" name="save" value="Save Card" />
 </body>
 </html>
