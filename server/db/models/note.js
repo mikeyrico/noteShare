@@ -9,10 +9,7 @@ var noteSchema = new mongoose.Schema({
   answer: String,
 });
 
-var Note = mongoose.model('Note', noteSchema);
-
-module.exports = Note;
-
+module.exports = mongoose.model('notes', noteSchema);
 
 // should require db (located at ../db-config)
 
