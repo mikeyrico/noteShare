@@ -26,7 +26,9 @@ noteShareControllers.controller('AddNoteCtrl', ['$scope', '$http', '$location',
 noteShareControllers.controller('NoteDetailCtrl', ['$scope', '$http', '$routeParams',
   function($scope, $http, $routeParams) {
     $scope.notes = [];
-    $scope.test = "testing";
+
+    $scope.que = 'question';
+    $scope.ans = 'answer';
 
     $scope.getNotes = function() {
       $http({
