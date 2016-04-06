@@ -100,15 +100,27 @@ input {
 }
 
 .question {
-  width: 400px, height 100px;
+  width: 400px;
+  height: 100px;
   margin: 10px;
   padding: 10px;
   border: 3px dotted blue;
 }
 
 .answer {
-  width: 400px, height 100px;
+  width: 400px;
+  height: 100px;
   margin: 10px;
   padding: 10px;
   border: 3px dotted red;
+}
+
+.navbar {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+a:link {
+  text-decoration: none;
 }
