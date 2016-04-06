@@ -17,6 +17,6 @@ noteShareApp.config(['$routeProvider',
         controller: 'AddNoteCtrl'
       }).
       otherwise({
-        redirectTo: '/addNote'
+        redirectTo: '/notes'
       });
 }]);

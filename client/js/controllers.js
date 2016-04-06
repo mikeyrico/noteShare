@@ -17,22 +17,28 @@ noteShareControllers.controller('AddNoteCtrl', ['$scope', '$http', '$location',
         url: '/note',
         data: newNote
       }).then(function() {
-        $location('/notes');
+        $location.path('/notes');
       });
     };
   }
 ]);
 
 noteShareControllers.controller('NoteDetailCtrl', ['$scope', '$http', '$routeParams',
-  function($scope, $routeParams) {
+  function($scope, $http, $routeParams) {
     $scope.notes = [];
+    $scope.test = "testing";
 
     $scope.getNotes = function() {
       $http({
         method:'GET',
         url: '/notes',
-      }).then(function(data) {
-       $scope.notes = data;
+      }).then(function(response) {
+        console.log('response =', response.data);
+       $scope.notes = response.data;
+      }).catch(function(error) {
+        console.log(error);
       });
-    }
+    };
+
+    $scope.getNotes();
   }]);
