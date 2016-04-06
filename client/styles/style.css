@@ -72,6 +72,7 @@ table {
 h1 {
   font-size: 36pt;
   font-family: 'Helvetica', serif;
+  max-width: 300px;
   text-align: center;
   padding-bottom: 36px;
 }
@@ -100,19 +101,21 @@ input {
 }
 
 .question {
-  width: 400px;
-  height: 100px;
+  line-height: 125%;
+  max-width: 300px;
   margin: 10px;
   padding: 10px;
-  border: 3px dotted blue;
+  border: 1px dotted blue;
+  border-radius: 5px;
 }
 
 .answer {
-  width: 400px;
-  height: 100px;
+  line-height: 125%;
+  max-width: 300px;
   margin: 10px;
   padding: 10px;
-  border: 3px dotted red;
+  border: 1px dotted red;
+  border-radius: 5px;
 }
 
 .navbar {
@@ -123,4 +126,22 @@ input {
 
 a:link {
   text-decoration: none;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+a:active {
+    background-color: hotpink;
+}
+
+nav {
+  margin: 5px;
+}
+
+textarea {
+  width: 200px; height: 100px;
+  padding: 8px;
+  margin: 8px;
 }
